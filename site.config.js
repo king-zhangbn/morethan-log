@@ -1,35 +1,35 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    name: "萌萌哒小明",
+    image: "/avatar.svg", // 如果你想自己创作notion头像，请参见https://notion-avatar.vercel.app
+    role: "前端开发工程师",
+    bio: "我使用node开发一切。",
+    email: "xiaoming@mengmengda.com",
+    linkedin: "mengmengda-xiaoming",
+    github: "mengmengda-xiaoming",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `萌萌日志`,
+      href: "<https://github.com/mengmengda-xiaoming/mengmeng-log>",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "萌萌日志",
+    description: "欢迎来到萌萌日志！",
     theme: "light", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
-  ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
+  link: "<https://mengmeng-log.vercel.app>",
+  since: 2022, // 如果不填写，将使用当前年份。
+  lang: "zh-CN", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  ogImageGenerateURL: "<https://og-image-korean.vercel.app>", // 生成OG图像的链接，不要以斜杠结尾
   seo: {
-    keywords: ["Blog", "Website", "Notion"],
+    keywords: ["博客", "网站", "Notion"],
   },
 
   // notion configuration (required)
@@ -53,18 +53,18 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "morethanmin/morethan-log",
+      repo: "mengmengda-xiaoming/mengmeng-log",
       "issue-term": "og:title",
-      label: "💬 Utterances",
+      label: "💬 评论",
     },
   },
   cusdis: {
     enable: false,
     config: {
-      host: "https://cusdis.com",
-      appid: "", // Embed Code -> data-app-id value
+      host: "<https://cusdis.com>",
+      appid: "", // 嵌入代码-> data-app-id值
     },
   },
-  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: process.env.VERCEL_ENV === "production", // 区分开发和生产环境（参见：<https://vercel.com/docs/environment-variables#system-environment-variables）>
 }
 module.exports = CONFIG
